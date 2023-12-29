@@ -33,6 +33,7 @@ pip install -r requirements.txt
 * 二值化算法：使用全局阈值则跳过该选项即可，或者也可输入OTSU、采用大津二值化算法。
 * 设置全局阈值：如果上面选择全局阈值则需要手动设置全局阈值，对于`.\test.txt`中所提样例，使用全局阈值并在后面设置为160即可。
 * 手动调整中间结果：若输入Y/y，则在识别简谱后会暂停代码，并生成一份txt文件，在其中展示识别结果，此时用户可以通过修改这份txt文件来更正识别结果。
+* 如果选择文件夹的话，还可以选择所选文件夹中不需要识别的文件以排除干扰。
 
 ## 四、文件结构说明
 
@@ -49,7 +50,7 @@ pip install -r requirements.txt
 
 * new_midi_file：生成的midi结果示例。
 
-  * Canon.mid：《C大调卡农》，简谱图片来自https://www.everyonepiano.cn/Number-31.html。
-  * unravel.mid：歌曲《unravel》，简谱图片来自https://www.qinyipu.cn/jianpu/jianpudaquan/253918.html。
+  * Canon.mid：《C大调卡农》，简谱图片来自https://www.everyonepiano.cn/Number-31.html
+  * unravel.mid：歌曲《unravel》，简谱图片来自https://www.qinyipu.cn/jianpu/jianpudaquan/253918.html
 
   * unravel_after.mid：在识别图片时进行手动更正后的结果。
