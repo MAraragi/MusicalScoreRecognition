@@ -39,7 +39,7 @@ class Recognition:
 
     def __init__(self, imgPath, speed=120, tonic='C', beat="4/4", delta_range=1.0,
                  print_info=1, match_precision=1, thread_num=1, sampling_rate=1,
-                 threshold_method="global", threshold=220):
+                 threshold_method="global", threshold=160):
         self.srcImg = cv2.imread(imgPath)
         self.imgname = imgPath.split('/')[-1].split('\\')[-1].split('.')[0]
         self.ospath = os.getcwd()

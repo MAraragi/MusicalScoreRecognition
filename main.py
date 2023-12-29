@@ -5,7 +5,7 @@ from createmidi import createMidi
 
 
 args = {"speed": 150, "tonic": 'C', 'beat': "4/4", "delta_range": 1.5, "print_info": 1, "match_precision": 2,
-        "thread_num": 8, "sampling_rate": 2, "threshold_method": "global", "threshold": 220}
+        "thread_num": 8, "sampling_rate": 2, "threshold_method": "global", "threshold": 160}
 
 
 def main():
@@ -40,11 +40,11 @@ def main():
     if threshold_method != '':
         args["threshold_method"] = threshold_method
         if threshold_method != "OTSU":
-            threshold = input("全局阈值想要设置为多少呢(如果直接跳过的话默认220喔)：")
+            threshold = input("全局阈值想要设置为多少呢(如果直接跳过的话默认160喔)：")
             if threshold != '':
                 args["threshold"] = int(threshold)
     else:
-        threshold = input("全局阈值想要设置为多少呢(如果直接跳过的话默认220喔)：")
+        threshold = input("全局阈值想要设置为多少呢(如果直接跳过的话默认160喔)：")
         if threshold != '':
             args["threshold"] = int(threshold)
     wanna_debug = input("需要自己手动调整一下中间过程吗(不输入Y/y就默认不改哈)：").upper()
