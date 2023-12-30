@@ -22,7 +22,9 @@ pip install -r requirements.txt
 
 ## 三、项目运行步骤
 
-* 运行main.py。
+### 3.1 命令行运行
+
+* 运行`main.py`。
 * 输入简谱路径：支持图片或文件夹，相对路径或绝对路径都可以。
 * 输入简谱主音：它通常在第一页的左上角“1=”之后。
 * 输入简谱速度：即每分钟拍数，同在左上角。
@@ -35,6 +37,13 @@ pip install -r requirements.txt
 * 手动调整中间结果：若输入Y/y，则在识别简谱后会暂停代码，并生成一份txt文件，在其中展示识别结果，此时用户可以通过修改这份txt文件来更正识别结果。
 * 如果选择文件夹的话，还可以选择所选文件夹中不需要识别的文件以排除干扰。
 
+### 3.2 图形界面运行
+
+* 运行`main_UI.py`。
+* 输入参数与“命令行运行”的相同，图示如下（以test.txt中提到的Canon为例）：
+
+<img src="输入参数图示.png" style="zoom: 50%;" />
+
 ## 四、文件结构说明
 
 * templates：模版匹配算法所用的模版文件，可通过将模版图片添加至文件夹`.\templates_imgs`中，然后运行`.\KdTree.py`来生成。
@@ -42,12 +51,14 @@ pip install -r requirements.txt
 * templates_imgs：模版对应的图片。
 * test.txt：示例用图片，尊重图片方版权，仅提供链接。
 * *.py：项目代码。
-  * main_copy.py：创建UI，调用其他代码实现简谱识别。
-  * recognition_copy.py：识别简谱、提取音乐信息。
+  * main.py：程序入口，调用其他代码实现简谱识别。
+  * recognition.py：识别简谱、提取音乐信息。
   * KdTree.py：读取及创建模版，实现KD树算法。
   * midiMapping.py：建立简谱符号与midi通道的映射关系。
   * createmidi.py：生成midi文件。
-
+  * main_UI.py：程序UI的入口。
+  * recognition_UI.py：与UI界面适配的简谱识别程序。
+  
 * new_midi_file：生成的midi结果示例。
 
   * Canon.mid：《C大调卡农》，简谱图片来自https://www.everyonepiano.cn/Number-31.html
