@@ -42,7 +42,7 @@ pip install -r requirements.txt
 * 运行`main_UI.py`。
 * 输入参数与“命令行运行”的相同，图示如下（以test.txt中提到的Canon为例）：
 
-<img src="输入参数图示.png" style="zoom: 50%;" />
+<img src="输入参数图示.png" style="zoom: 40%;" />
 
 ## 四、文件结构说明
 
