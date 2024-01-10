@@ -47,7 +47,7 @@ pip install -r requirements.txt
 ## 四、文件结构说明
 
 * templates：模版匹配算法所用的模版文件，可通过将模版图片添加至文件夹`.\templates_imgs`中，然后运行`.\KdTree.py`来生成。
-* templates_：采样率更低的模板图片，具体情况请见于课程论文的 *2.2.4 减少采样频率* 。
+* templates_：采样率更低的模板图片 。
 * templates_imgs：模版对应的图片。
 * test.txt：示例用图片，尊重图片方版权，仅提供链接。
 * *.py：项目代码。
